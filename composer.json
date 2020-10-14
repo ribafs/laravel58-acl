@@ -1,0 +1,33 @@
+{
+    "name": "ribafs/laravel58-acl",
+    "description": "ACL Implementation to Applications in Laravel 5.8",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ribamar FS",
+            "email": "ribafs@gmail.com",
+            "homepage": "https://ribafs.github.io"
+        }
+    ],
+    "homepage": "https://github.com/ribafs/laravel58-acl",
+    "keywords": ["Laravel", "Acl"],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Ribafs\\Laravel58Acl\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ribafs\\Laravel58Acl\\Laravel58AclServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAcl": "Ribafs\\Laravel58Acl\\Facades\\Laravel58Acl"
+            }
+        }
+    }
+}
