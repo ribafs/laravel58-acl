@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Models\User;
-use App\Models\Permission;
+use App\User;
+use App\Permission;
 use DB;
 
 class AclDelPermissionCommand extends Command

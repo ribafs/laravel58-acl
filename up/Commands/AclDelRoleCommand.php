@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Models\User;
-use App\Models\Role;
+use App\User;
+use App\Role;
 use DB;
 
 class AclDelRoleCommand extends Command
