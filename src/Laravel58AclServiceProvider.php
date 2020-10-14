@@ -52,11 +52,6 @@ class Laravel58AclServiceProvider extends ServiceProvider
             __DIR__.'/../up/database/' => base_path('/database'),
         ], 'laravel58-acl.database');
 
-        // Publishing models.
-        $this->publishes([
-            __DIR__.'/../up/Models/' => base_path('/app'),
-        ], 'laravel58-acl.models');
-
         // Publishing app.
         $this->publishes([
             __DIR__.'/../up/app/' => base_path('/app'),
