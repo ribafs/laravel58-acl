@@ -60,7 +60,7 @@ class Laravel58AclServiceProvider extends ServiceProvider
         // Publishing the resources.
         $this->publishes([
             __DIR__.'/../up/resources/' => base_path('/resources'),
-        ], 'laravel58-acl.viewss');
+        ], 'laravel58-acl.resources');
 
         // Publishing commands.
         $this->publishes([
