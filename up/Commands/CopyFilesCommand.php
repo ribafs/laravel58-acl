@@ -29,27 +29,27 @@ class CopyFilesCommand extends Command
     {
         // Files to overwrite here. Only copy in provider
         $route = base_path('routes/web.php');
-        File::copy(base_path('vendor/ribafs/laravel-acl/up/web.php'), $route);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/web.php'), $route);
 
         $user = app_path('Models/User.php');
-        File::copy(base_path('vendor/ribafs/laravel-acl/up/User.php'), $user);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/User.php'), $user);
 
-        File::copy(base_path('vendor/ribafs/laravel-acl/up/welcome.blade.php'), base_path('resources/views/welcome.blade.php'));
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/welcome.blade.php'), base_path('resources/views/welcome.blade.php'));
 
         $appb = base_path('resources/views/layouts/app.blade.php');
-        File::copy(base_path('vendor/ribafs/laravel-acl/up/app.blade.php'), $appb);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/app.blade.php'), $appb);
 
         $prov = app_path('Providers/AppServiceProvider.php');
-        File::copy(base_path('vendor/ribafs/laravel-acl/up/AppServiceProvider.php'), $prov);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/AppServiceProvider.php'), $prov);
 
         $app = base_path('config/app.php');
-        File::copy(base_path('vendor/ribafs/laravel-acl/up/app.php'), $app);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/app.php'), $app);
 
         $kernel = app_path('Http/Kernel.php');
-        File::copy(base_path('vendor/ribafs/laravel-acl/up/Kernel.php'), $kernel);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/Kernel.php'), $kernel);
 
         $seeder = database_path('seeders/DatabaseSeeder.php');
-        File::copy(base_path('vendor/ribafs/laravel-acl/up/DatabaseSeeder.php'), $seeder);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/DatabaseSeeder.php'), $seeder);
 
         $this->info(PHP_EOL);
         $this->info('Arquivos copiados com sucesso.'.PHP_EOL);

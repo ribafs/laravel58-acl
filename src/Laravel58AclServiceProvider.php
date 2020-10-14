@@ -30,7 +30,7 @@ class Laravel58AclServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['laravel-acl'];
+        return ['laravel58-acl'];
     }
     
     /**
@@ -43,34 +43,34 @@ class Laravel58AclServiceProvider extends ServiceProvider
         // Here only folders with new files and only copy without overwrite
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/laravel-acl.php' => config_path('laravel-acl.php'),
-        ], 'laravel-acl.config');
+            __DIR__.'/../config/laravel58-acl.php' => config_path('laravel58-acl.php'),
+        ], 'laravel58-acl.config');
 
         // Directories
         // Publishing the migrations.
         $this->publishes([
             __DIR__.'/../up/database/' => base_path('/database'),
-        ], 'laravel-acl.database');
+        ], 'laravel58-acl.database');
 
         // Publishing models.
         $this->publishes([
             __DIR__.'/../up/Models/' => base_path('/app'),
-        ], 'laravel-acl.models');
+        ], 'laravel58-acl.models');
 
         // Publishing app.
         $this->publishes([
             __DIR__.'/../up/app/' => base_path('/app'),
-        ], 'laravel-acl.app');
+        ], 'laravel58-acl.app');
 
         // Publishing the resources.
         $this->publishes([
             __DIR__.'/../up/resources/' => base_path('/resources'),
-        ], 'laravel-acl.viewss');
+        ], 'laravel58-acl.viewss');
 
         // Publishing commands.
         $this->publishes([
             __DIR__.'/../up/Commands/' => app_path('Console/Commands'),
-        ], 'laravel-acl.commands');
+        ], 'laravel58-acl.commands');
   
         // Registering package commands.
         //$this->commands([]);

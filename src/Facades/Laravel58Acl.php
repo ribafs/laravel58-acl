@@ -1,9 +1,9 @@
 <?php
-namespace Ribafs\LaravelAcl\Facades;
+namespace Ribafs\Laravel58Acl\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class LaravelAcl extends Facade
+class Laravel58Acl extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -12,6 +12,6 @@ class LaravelAcl extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel-acl';
+        return 'laravel58-acl';
     }
 }
