@@ -49,7 +49,7 @@ class CopyFilesCommand extends Command
         $kernel = app_path('Http/Kernel.php');
         File::copy(base_path('vendor/ribafs/laravel58-acl/up/Kernel.php'), $kernel);
 
-        $seeder = database_path('seeders/DatabaseSeeder.php');
+        $seeder = database_path('seeds/DatabaseSeeder.php');
         File::copy(base_path('vendor/ribafs/laravel58-acl/up/DatabaseSeeder.php'), $seeder);
 
         $this->info(PHP_EOL);
