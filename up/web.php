@@ -1,9 +1,9 @@
 <?php
 Auth::routes();
 
-Route::get('/home', 'HomeController@home')->name('home');
+Route::get('/', 'HomeController@home');
 
-Route::get('/', 'HomeController@index')->name('index');
+Route::get('/home', 'HomeController@home')->name('home');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     Route::resource('users', 'Admin\UserController');
