@@ -1,7 +1,7 @@
 <?php
 Auth::routes();
 
-Route::get('/', 'HomeController@home');
+Route::get('/', 'HomeController@index');
 
 Route::get('/home', 'HomeController@home')->name('home');
 
