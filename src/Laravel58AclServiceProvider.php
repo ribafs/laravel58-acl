@@ -47,7 +47,7 @@ class Laravel58AclServiceProvider extends ServiceProvider
         ], 'laravel58-acl.config');
 
         // Directories
-        // Publishing the migrations.
+        // Publishing the database.
         $this->publishes([
             __DIR__.'/../up/database/' => base_path('/database'),
         ], 'laravel58-acl.database');
