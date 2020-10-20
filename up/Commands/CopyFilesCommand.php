@@ -28,35 +28,25 @@ class CopyFilesCommand extends Command
     public function handle()
     {
         // Files to overwrite here. Only copy in provider
-        $route = base_path('routes/web.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/web.php'), $route);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/web.php'), base_path('routes/web.php'));
 
-        $api = base_path('routes/api.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/api.php'), $route);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/api.php'), base_path('routes/api.php'));
 
-        $homec = app_path('Http/Controllers/HomeController.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/HomeController.php'), $homec);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/HomeController.php'), app_path('Http/Controllers/HomeController.php'));
 
-        $user = base_path('app/User.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/User.php'), $user);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/User.php'), base_path('app/User.php'));
 
-        $wel = base_path('resources/views/welcome.blade.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/welcome.blade.php'), $wel);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/welcome.blade.php'), base_path('resources/views/welcome.blade.php'));
 
-        $home = base_path('resources/views/home.blade.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/home.blade.php'), $wel);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/home.blade.php'), base_path('resources/views/home.blade.php'));
 
-        $appb = base_path('resources/views/layouts/app.blade.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/app.blade.php'), $appb);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/app.blade.php'), base_path('resources/views/layouts/app.blade.php'));
 
-        $app = base_path('config/app.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/app.php'), $app);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/app.php'), base_path('config/app.php'));
 
-        $kernel = app_path('Http/Kernel.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/Kernel.php'), $kernel);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/Kernel.php'), app_path('Http/Kernel.php'));
 
-        $seeder = database_path('seeds/DatabaseSeeder.php');
-        File::copy(base_path('vendor/ribafs/laravel58-acl/up/DatabaseSeeder.php'), $seeder);
+        File::copy(base_path('vendor/ribafs/laravel58-acl/up/DatabaseSeeder.php'), database_path('seeds/DatabaseSeeder.php'));
 
         $this->info(PHP_EOL);
         $this->info('Arquivos copiados com sucesso.'.PHP_EOL);
