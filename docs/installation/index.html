@@ -598,10 +598,18 @@
 <table class="bash codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="bash codehilite"><pre><span></span><code>composer create-project laravel/laravel<span class="o">=</span><span class="s2">&quot;5.8.*&quot;</span> acl
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="bash codehilite"><pre><span></span><code>composer create-project laravel/laravel<span class="o">=</span><span class="s2">&quot;5.8.*&quot;</span> acl
 <span class="nb">cd</span> acl
 
 php artisan make:auth
+
+Caso tenha o installer <span class="k">do</span> <span class="m">5</span>.8 basta:
+
+laravel new acl --auth
 </code></pre></div>
 </td></tr></table>
 <h3 id="criar-e-configurar-o-banco">Criar e configurar o banco</h3>
