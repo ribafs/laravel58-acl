@@ -67,6 +67,11 @@ As informações acima e muito mais informações de como tirar o máximo provei
 
 [https://ribafs.github.io/laravel58-acl](https://ribafs.github.io/laravel58-acl)
 
+## Pacote exclusivo para a versão 6 do laravel
+
+Se deseja um pacote para usar com a versão 6 do laravel, clique abaixo:
+
+[https://github.com/ribafs/laravel6-acl](https://github.com/ribafs/laravel6-acl)
 
 ## Pacote exclusivo para a versão 7 do laravel
 
