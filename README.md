@@ -85,6 +85,12 @@ Se deseja um pacote para usar com a versão 8 do laravel, clique abaixo:
 
 [https://github.com/ribafs/laravel-acl](https://github.com/ribafs/laravel-acl)
 
+## Versão para o Laravel 8 com aplicactivos existentes
+
+Se deseja um pacote para usar com a versão 8 do laravel com aplicativo existente, clique abaixo:
+
+[https://github.com/ribafs/laravel-acl-exist](https://github.com/ribafs/laravel-acl-exist)
+
 ## Licença
 
 MIT
