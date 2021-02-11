@@ -10,8 +10,11 @@ Usando users, roles, permissions, trait, middleware, provider, etc
 ## Criar um novo aplicativo com laravel 5.8
 ```bash
 laravel new acl --auth
-```
-```bash
+
+ou
+composer create-project laravel/laravel="5.8.*" acl
+php artisan make:auth
+
 cd acl
 ```
 ### Criar e configurar o banco
